@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+		<title> zad 4 </title>
+	</head>
+	<body>
+	<h1> Sposoby podłączania styli CSS kodu do strony WWW. </h1>
+<!-- 1 -->
+	<p> <font size="5"> <b> 1) <u>Zewnętrzny</u> arkusz stylów: </b> </font> </p>
+<table border="1" style="border-collapse: collapse; width: 50%; height: 46px;">
+<tbody>
+<tr>
+<td>
+<font size="4">
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &lt;link rel="Stylesheet" type="text/css" href="style.css" /&gt;</p>
+<p>&lt;/head&gt;</p>
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- 2 -->
+	<p> <font size="5"> <b> 2) Styl <u>lokalny</u> inaczej: (styl wpisany, liniowy, linijkowy, w linii) czyli dopisanie arkusza do wybranego bloku treści strony: </b> </font> </p>
+<table border="1" style="border-collapse: collapse; width: 50%; height: 46px;">
+<tbody>
+<tr>
+<td>
+<font size="4">
+<p>&lt;selektor style="cecha1: wartość1; cecha2: wartość2..."&gt;...&lt;/selektor&gt;</p>
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- 3 -->
+<p> <font size="5"> <b> 3) <u>Wewnętrzny</u> arkusz stylów: </b> </font> </p>
+<table border="1" style="border-collapse: collapse; width: 50%; height: 46px;">
+<tbody>
+<tr>
+<td>
+<font size="4">
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &nbsp;&lt;style type="text/css"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;selektor1 { cecha: wartość; cecha2: wartość2... }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp;selektor2 { cecha: wartość; cecha2: wartość2... }</p>
+<p>&nbsp; &nbsp; &nbsp;&lt;/style&gt;</p>
+<p>&lt;/head&gt;</p>
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- 4 -->
+<p> <font size="5"> <b> 4) <u>Alternatywny</u> arkusz stylów: </b> </font> </p>
+<table border="1" style="border-collapse: collapse; width: 50%; height: 46px;">
+<tbody>
+<tr>
+<td>
+<font size="4">
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;link rel="Stylesheet" type="text/css" href="style.css" title="Nazwa domyślna" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;link rel="Alternate stylesheet" type="text/css" href="style1.css" title="Nazwa 1" /&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&lt;link rel="Alternate stylesheet" type="text/css" href="style2.css" title="Nazwa 2" /&gt;</p>
+<p>&lt;/head&gt;</p>
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- 5 -->
+<p> <font size="5"> <b> 5) <u>Import</u> arkusza stylów: </b> </font> </p>
+<table border="1" style="border-collapse: collapse; width: 50%; height: 46px;">
+<tbody>
+<tr>
+<td>
+<font size="4">
+<p>&lt;style type="text/css"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; @import url(adres zewnętrznego arkusza styl&oacute;w);</p>
+<p>&lt;/style&gt;</p>
+</font>
+</td>
+</tr>
+</tbody>
+</table>
+	</body>
+</html>
