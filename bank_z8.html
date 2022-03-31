@@ -1,0 +1,48 @@
+<html>
+	<head>
+		<META HTTP-EQUIV="content-type" CONTENT="text/html; CHARSET=UTF-8">
+		<title> zad 8 </title>
+	</head>
+	<body>
+	<br>
+	<center>
+	<p><font face="Arial" size="5" <b> Wewnętrzny arkusz stylów </b> </font> </p>
+	</center>
+	<ol>
+<li><h1>Gdzie jest wstawiany?<h1></li> <br>
+<font size="4" face="Arial"> Wstawia się zawsze w części nagłówkowej dokumentu (pomiędzy znacznikami &lt;head&gt; a 
+&lt;/head&gt;). Można go zastosować, gdy elementy które pragniemy poddać formatowaniu, 
+występują wielokrotnie na stronie i wszystkim chcemy nadać takie same atrybuty (inne niż domyślne). </font>
+
+<li><h1>Składnia teoretyczna:</h1></li> <br>
+<table border="1" style="border-collapse: collapse; width: 50%; height: 116px;">
+<tbody>
+<tr style="height: 44px;">
+<td align="left" style="width: 50%; height: 116px;">
+<p>&lt;head&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (...)</p>
+<p>&nbsp; &nbsp; &nbsp;&lt;style type="text/css"&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; /*&lt;![CDATA[ */</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;selektor1&nbsp;{ cecha: wartość; cecha2: wartość2... }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;selektor2&nbsp;{ cecha: wartość; cecha2: wartość2... }</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (...)</p>
+<p>&nbsp; &nbsp; &nbsp;&nbsp; /* ]]&gt; */</p>
+<p>&nbsp; &nbsp; &nbsp;&lt;/style&gt;</p>
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (...)</p>
+<p>&lt;/head&gt;</p>
+</td>
+</tr>
+</tbody>
+</table>
+<li><h1>Jakie mogą być selektory?<h1></li> <br>
+<font size="4" face="Arial"> Selektorem może być praktycznie dowolny znacznik, np. p (akapit), h1 (tytuł), td (komórka 
+tabeli) i inne. To właśnie elementom, które znajdują się w kodzie źródłowym, pomiędzy tymi 
+znacznikami, nadajemy atrybuty formatowania opisane w arkuszu. </font>
+
+<li><h1>Jakie mogą być cechy i wartości?</h1></li> <br>
+<font size="4" face="Arial"> Jako "cecha" (w deklaracji stylu - powyżej) należy wpisać o jakie konkretnie atrybuty 
+formatowania nam chodzi (opisane w kolejnych rozdziałach).Natomiast jako wyraz "wartość" wpisujemy dokładną wartość atrybutu.
+Zwróć uwagę, że jednemu selektorowi możemy nadać kilka atrybutów (cech). Są one wtedy rozdzielone średnikami. </font>
+	</ol>
+	</body>
+</html>
