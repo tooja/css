@@ -1,15 +1,15 @@
 /* Norbert Bańka */
 p 
 {
-color: red;
-font-size: 22pt;
+	color: red;
+	font-size: 22pt;
 }
 
 p#gruby_banka
 {
-color: green;
-font-size:17pt;
-font-weight: bold;
+	color: green;
+	font-size:17pt;
+	font-weight: bold;
 }
 
 #dlawszystkich_banka
